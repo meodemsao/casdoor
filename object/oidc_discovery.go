@@ -76,7 +76,7 @@ func getOriginFromHostInternal(host string) (string, string) {
 	}
 
 	if host == "localhost:8000" {
-		return fmt.Sprintf("%s%s", protocol, "localhost:7001"), fmt.Sprintf("%s%s", protocol, "localhost:8000")
+		return fmt.Sprintf("%s%s", protocol, "localhost:8000"), fmt.Sprintf("%s%s", protocol, "localhost:8000")
 	} else {
 		return fmt.Sprintf("%s%s", protocol, host), fmt.Sprintf("%s%s", protocol, host)
 	}
